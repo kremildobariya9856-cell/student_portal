@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+</head>
+<body>
+
+<h2>Student Feedback Form</h2>
+
+<form action="#" method="post">
+
+    <h3>Student Information</h3>
+
+    <label>Full Name:</label><br>
+    <input type="text" name="fullname" required><br><br>
+
+    <label>Student ID:</label><br>
+    <input type="text" name="studentid" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Department:</label><br>
+    <select name="department">
+        <option>Computer Engineering</option>
+        <option>Information Technology</option>
+        <option>Mechanical Engineering</option>
+        <option>Civil Engineering</option>
+    </select><br><br>
+
+    <label>Semester:</label><br>
+    <select name="semester">
+        <option>Semester 1</option>
+        <option>Semester 2</option>
+        <option>Semester 3</option>
+        <option>Semester 4</option>
+    </select><br><br>
+
+    <h3>Course Details</h3>
+
+    <label>Course Name:</label><br>
+    <input type="text" name="course"><br><br>
+
+    <label>Faculty Name:</label><br>
+    <input type="text" name="faculty"><br><br>
+
+    <label>Date:</label><br>
+    <input type="date" name="date"><br><br>
+
+    <h3>Feedback</h3>
+
+    <p>Teaching Quality</p>
+    <input type="radio" name="teaching"> Excellent
+    <input type="radio" name="teaching"> Good
+    <input type="radio" name="teaching"> Average
+    <input type="radio" name="teaching"> Poor
+
+    <p>Course Content</p>
+    <input type="radio" name="content"> Excellent
+    <input type="radio" name="content"> Good
+    <input type="radio" name="content"> Average
+    <input type="radio" name="content"> Poor
+
+    <p>Comments</p>
+    <textarea rows="5" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
