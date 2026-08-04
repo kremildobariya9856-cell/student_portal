@@ -1,81 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect</title>
+    <title>Student Portal Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        body {
+            background: #eaf4ff;
+            padding: 20px;
+        }
 
+        h1 {
+            color: #0d4d94;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            border: 1px solid #b5d3f5;
+            margin: 10px 0;
+        }
+
+        /* Top Menu */
+        center {
+            background: #0d4d94;
+            color: white;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* Main Table */
+        table {
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 1px solid #d6e4f5;
+        }
+
+        /* Left Menu */
+        td:first-child {
+            background: #feffff;
+            color: white;
+        }
+
+        td:first-child h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        td:first-child p {
+            padding: 12px;
+            margin: 6px 0;
+            background: #9dc3ef;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        td:first-child p:hover {
+            background: #f4f7f9;
+        }
+
+        /* Right Content */
+        td:last-child {
+            background: white;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #486b92;
+        }
+
+        h3 {
+            color: #6baefa;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 8px 0;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Inner Tables */
+        td table {
+            margin-top: 15px;
+        }
+
+        td table td {
+            background: #f8fbff;
+            border: 1px solid #c8dcf7;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        /* Hover Effect */
+        td table td:hover {
+            background: #edf5ff;
+            transition: .3s;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
+    <h1 align="center">STUDENT PORTAL</h1>
+    <hr>
 
-        <div class="logo">CampusConnect</div>
+    <center>
+        Student Name
+        &nbsp;&nbsp;&nbsp;
+        Search
+        &nbsp;&nbsp;&nbsp;
+        Logout
+    </center>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="login.html">Sign In</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
+    <hr>
 
-    </header>
+    <table border="1" width="100%" cellpadding="10">
 
-    <section class="banner">
+        <tr>
 
-        <div class="banner-content">
+            <!-- Left Menu -->
+            <td width="25%" valign="top">
 
-            <h1>Welcome to CampusConnect</h1>
+                <h3>MENU</h3>
 
-            <p>
-                A modern student portal designed to manage academic activities,
-                assignments, attendance, grades, and class schedules in one place.
-            </p>
+                <p>Dashboard</p>
+                <p>Profile</p>
+                <p>Courses</p>
+                <p>Result</p>
+                <p>Attendance</p>
+                <p>Assignment</p>
+                <p>Events</p>
+                <p>Contact</p>
+                <p>Login</p>
+                <p>Register</p>
+                <p>Logout</p>
 
-            <a href="login.html" class="btn">Get Started</a>
+            </td>
 
-        </div>
+            <!-- Right Side -->
+            <td valign="top">
 
-    </section>
+                <h2 align="center">DASHBOARD</h2>
 
-    <section class="services">
+                <hr>
 
-        <h2>Student Services</h2>
+                <h3>STUDENT OVERVIEW</h3>
 
-        <div class="grid">
+                <p><b>Student Name :</b> Amit Patel</p>
+                <p><b>Enrollment No :</b> STU2026001</p>
+                <p><b>Course :</b> BCA</p>
+                <p><b>Semester :</b> 3rd Semester</p>
+                <p><b>Academic Year :</b> 2026-2027</p>
 
-            <div class="box">
-                <h3>Attendance</h3>
-                <p>Monitor attendance records quickly and accurately.</p>
-            </div>
+                <p>Welcome to the Student Portal!</p>
 
-            <div class="box">
-                <h3>Results</h3>
-                <p>Check exam scores and semester performance.</p>
-            </div>
+                <hr>
 
-            <div class="box">
-                <h3>Assignments</h3>
-                <p>Upload and manage coursework with ease.</p>
-            </div>
+                <table border="1" width="100%" cellpadding="10">
 
-            <div class="box">
-                <h3>Class Schedule</h3>
-                <p>Stay updated with your daily and weekly timetable.</p>
-            </div>
+                    <tr>
 
-        </div>
+                        <td width="50%">
 
-    </section>
+                            <h3>QUICK STATISTICS</h3>
 
-    <footer>
-        &copy; 2026 CampusConnect. All Rights Reserved.
-    </footer>
+                            <p>Attendance : 89%</p>
+                            <p>Assignments Pending : 2</p>
+                            <p>Assignments Submitted : 5</p>
+                            <p>Current CGPA : 8.5</p>
+                            <p>Courses Enrolled : 6</p>
+
+                        </td>
+
+                        <td>
+
+                            <h3>LATEST NOTIFICATIONS</h3>
+
+                            <ul>
+                                <li>Assignment 3 Due on 15 Aug</li>
+                                <li>Mid-Sem Exam Starts on 20 Aug</li>
+                                <li>Web Technology Lab on Friday</li>
+                                <li>Fee Payment Last Date 30 Aug</li>
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+                <br>
+
+                <table border="1" width="100%" cellpadding="10">
+
+                    <tr>
+
+                        <td>
+
+                            <h3>UPCOMING EVENTS</h3>
+
+                            <ul>
+                                <li>Coding Competition</li>
+                                <li>Technical Workshop</li>
+                                <li>Sports Week</li>
+                                <li>Project Submission</li>
+                                <li>Annual Function</li>
+                            </ul>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </td>
+
+        </tr>
+
+    </table>
 
 </body>
 
